@@ -7,7 +7,7 @@
 	box-sizing: border-box;
   font-family: 'Dosis', sans-serif;
 }
-/*CONTENEDOR SCROLLBAR*/
+/*CONTENEDOR SCROLLBAR derecha*/
 ::-webkit-scrollbar {
   height: 0px;
   width: 0px;
@@ -17,7 +17,7 @@
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-/* SELECTOR */
+/* SELECTOR  */
 ::-webkit-scrollbar-thumb {
   background: rgb(109, 223, 185);
   border-radius: 5px;
@@ -25,7 +25,7 @@
 /* SELECTOR hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(84, 171, 142);
-  ;
+  
 }
 .portada{
   background-color:white;
@@ -35,7 +35,9 @@ header{
 	width: 100%;
 }
 .navegacion{
-	width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 	margin: 0px auto;
   text-decoration: none;
 }
@@ -44,14 +46,15 @@ header{
 	list-style: none;
 }
 .menu{
+  width: 500px;
   height: 55px;
   padding: 3px;
-  
+  display: flex;
 }
+
 .menu > li{
 	position: relative;
 	display: inline-block;
-
 }
 .menu > li > a{
 	display: block;
@@ -68,11 +71,9 @@ header{
 /*---barra busqueda---*/
 .barrabusqueda {
   position: relative;
-  left: 15%;
-  top: -70px;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
 }
 input[type=text] {
   padding: 10px;
@@ -129,11 +130,17 @@ button:hover {
   padding: 0;
   margin: 0 auto 0 auto;
 }
+.login{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.login a{
+  color:#45a049;
+}
 .inisesion{
-  position: relative;
-  left: 100%;
-  top: -33px;
-  font-size: 13pt;
   text-decoration: none;
 }
 a{
@@ -143,24 +150,29 @@ a{
 .registrarse{
   padding-top: 5px;
   padding-left: 14px;
-  left:112%;
-  top: -60px;
   height: 35px;
   width: 100px;
   position: relative;
   background-color: rgb(34, 181, 32);
   border-radius: 50px;
-  color: white;
-  font-size: 13pt;
 }
-.chances{
+.logo{
   position: relative;
-  width: 30px;
-  top: -116px;
-  right: 220px;
+  padding: 0 20px;
   text-decoration: none;
   font-size: 26pt;
   color:rgb(34, 181, 32);
+  font-family: 'Caveat', cursive;
+  font-size: 30pt;
+
+}
+.inisesion a{
+  color: rgb(34, 181, 32);
+  font-size: 13pt;
+}
+.registrarse a{
+  color: white;
+  font-size: 13pt;
 }
 .gif img{
   position: relative;
@@ -209,15 +221,7 @@ a{
   color: white;
   text-decoration: none;
 }
-.chances a{
-  color: rgb(34, 181, 32);
-  font-family: 'Caveat', cursive;
-  font-size: 40pt;
 
-}
-.inisesion a{
-  color: rgb(34, 181, 32);
-}
 /*----------explicacion----*/
 .explicacion{
   padding: 15px;
